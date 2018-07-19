@@ -8,8 +8,6 @@
 		padding: 20px
 	.head__body
 		padding: 0 20px
-	.head__footer
-		padding: 0 20px
 	.head__adv-item
 		border-right: none
 		padding: 20px
@@ -75,17 +73,26 @@
 		display: none
 	.map__item
 		height: auto
-	.map__img-wrap
-		display: none
 	.partners
 		display: none
 	.service
 		padding: 20px 0
 	.map
 		padding: 20px 0
+	.map__item
+		flex-direction: column-reverse
+	.map__img-wrap
+		border-radius: 10px 10px 0 0
+		width: 100%
+	.map__img
+		width: 100px
 
 @media only screen and (max-width : 760px)
-	.main-content__video
+	.head
+		height: auto
+	.head__hidden-btn
+		display: block
+	.head__live
 		display: none
 	.head__adv-item
 		&:nth-child(3)
@@ -113,16 +120,28 @@
 		padding: 0 20px 
 
 @media only screen and (max-width : 600px)
-	.head__header
-		justify-content: center
-	.head__live
+	.desctop-titles
 		display: none
+	.mobile_titles
+		display: block
+		text-align: center
+		.main-content__desc:before
+			display: none
+	.head__body
+		flex-direction: column
+	.head__footer
+		flex-direction: column
+		align-items: center
+		text-align: center
+	.main-content__video
+		order: 1
 	.head__img-wrap
 		width: 200px
 	.head__img
 		width: 100%
 	.main-content__text
 		text-align: center
+		order: 2
 	.main-content__action
 		justify-content: center
 	.head__adv-item
@@ -130,6 +149,7 @@
 		padding: 15px
 	.main-content__title
 		font-size: 30px
+		padding: 0
 
 	.sec-title
 		font-size: 20px
@@ -161,10 +181,10 @@
 		padding: 20px 0
 
 @media only screen and (max-width : 480px)
+	.wich-me__logo
+		width: 200px
 	.main-content__title
 		font-size: 24px
-	.head__footer
-		padding: 0
 	.head__adv-item
 		font-size: 16px
 		padding: 6px
@@ -176,13 +196,12 @@
 		width: 180px
 	.main-content__button
 		width: 300px
-	.wich-me__logo
-		width: 200px
+	.head__img-wrap
+		width: 120px
 	.head__body
 		padding: 0 10px
 	.main-content__desc
 		letter-spacing: 0
-		margin-top: 0
 	.wich-me__money-title
 		font-size: 30px
 	.service__item-desc:last-child
